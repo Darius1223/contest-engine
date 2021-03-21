@@ -1,1 +1,1 @@
-web: gunicorn history_inf_engine.wsgi --log-file -
+web: gunicorn contest_engine.wsgi --log-file -
