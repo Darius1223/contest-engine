@@ -1,0 +1,26 @@
+{% extends 'layout/based.html' %}
+
+{% block title %}
+    Все объявления -  {{ block.super }}
+{% endblock %}
+
+{% block content %}
+    <p class="display-3">
+        Список объявлений
+    </p>
+    <div class="row">
+        {% for bb in bb_list %}
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ bb.title }}</h5>
+                        <p class="card-text">С вспомогательным текстом ниже в качестве естественного перехода к
+                            дополнительному контенту.</p>
+                        <a href="#" class="btn btn-primary">Перейти куда-нибудь</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}
